@@ -1,0 +1,15 @@
+{
+    "name": "history/prueba_php",
+    "description": "Api Rest de productos",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
