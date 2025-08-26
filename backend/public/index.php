@@ -1,12 +1,14 @@
 <?php
 require '../config/database.php';
-require '../src/ProductController.php';
+require __DIR__ . '/../src/ProductoController.php';
 
+// Cabeceras CORS
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 header('Content-Type: application/json');
 
+// Manejo de preflight (OPTIONS)
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
     exit;
